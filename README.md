@@ -3,38 +3,63 @@
 This project builds a machine learning pipeline to detect fraudulent credit card transactions using classical ML models like Logistic Regression, Random Forest, and XGBoost. It also includes experiment tracking with MLflow and detailed evaluation.
 
 ---
-
-## 📂 Project Structure
-
-```bash
+# Project structure
+---
 credit-card-fraud-detection/
 │
-├── config.py                # Configuration settings for paths and parameters
-├── preprocess.py            # Data preprocessing and feature engineering
-├── train.py                 # Model training script (basic)
-├── train_with_mlflow.py     # Model training with MLflow experiment tracking
+├── src/
+│   ├── config.py                        # Configuration settings for paths and parameters
+│   ├── preprocess.py                    # Data preprocessing and feature engineering
+│   ├── train.py                         # Model training script (basic)
+│   ├── train_with_mlflow.py             # Model training with MLflow experiment tracking
+│   │
+│   ├── models/                          # Folder containing model definitions
+│   │   ├── logistic_regression.py
+│   │   ├── random_forest.py
+│   │   └── xgboost_model.py
+│   │
+│   ├── eval.py                          # Evaluation functions (metrics, plots, threshold tuning)
+│   └── utils.py                         # Utility functions for saving/loading models and plots
 │
-├── models/                  # Folder containing model definitions
-│   ├── logistic_regression.py
-│   ├── random_forest.py
-│   └── xgboost_model.py
+├── datasets/                            # Folder containing datasets
+│   ├── train.csv
+│   ├── val.csv
+│   └── test.csv
 │
-├── eval.py                  # Evaluation functions (metrics, plots, threshold tuning)
-├── utils.py                 # Utility functions for saving/loading models and plots
+├── EDA/                                 # Exploratory Data Analysis (notebooks or scripts)
+│   ├── eda_notebook.ipynb
+│   └── feature_distributions.png
 │
-├── results/                 # Saved models, plots, metrics (organized by model)
+├── report/                              # Final report files (PDF/DOCX/LaTeX)
+│   ├── credit_fraud_report.pdf
+│   └── figures/
+│       ├── architecture.png
+│       └── example_plot.png
+│
+├── results/                             # Saved models, plots, metrics (organized by model)
 │   ├── LogisticRegression/
 │   │   ├── model.pkl
-│   │   └── plots/
-│   │       ├── confusion_matrix.png
-│   │       ├── roc_curve.png
-│   │       └── precision_recall_curve.png
+│   │   ├── confusion_matrix/
+│   │   │   └── confusion_matrix.png
+│   │   ├── roc_curve/
+│   │   │   └── roc_curve.png
+│   │   ├── precision_recall_curve/
+│   │   │   └── precision_recall_curve.png
+│   │   ├── precision_recall_threshold/
+│   │   │   └── precision_recall_threshold.png
+│   │   └── report/
+│   │       └── report.txt
+│   │
 │   ├── RandomForest/
+│   │   └── ...
+│   │
 │   └── XGBoost/
+│       └── ...
 │
-├── requirements.txt         # Python dependencies
-└── README.md                # Project overview (this file)
-```
+├── requirements.txt                     # Python dependencies
+└── README.md                            # Project overview (this file)
+
+
 
 ## 📊 Evaluation Metrics
 
