@@ -60,6 +60,15 @@ mlflow ui
 Open your browser at: [http://localhost:5000](http://localhost:5000)
 
 ---
+## 📌 Sample Model Scores
+
+| Model               | Accuracy | F1 Score | ROC AUC |
+|---------------------|----------|----------|---------|
+| Logistic Regression | 0.9994   | 0.81     | 0.95    |
+| Random Forest       | 0.9995   | 0.837    | 0.98    |
+| XGBoost             | 0.9996   | 0.862    | 0.99    |
+
+---
 
 ## 🧠 Models Used
 
