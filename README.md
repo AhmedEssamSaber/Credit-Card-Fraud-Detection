@@ -5,22 +5,21 @@ This project builds a machine learning pipeline to detect fraudulent credit card
 ---
 # Project structure
 ---
----bash
+```bash
 credit-card-fraud-detection/
 │
-├── src/
+├── src/                                 # Source code
 │   ├── config.py                        # Configuration settings for paths and parameters
 │   ├── preprocess.py                    # Data preprocessing and feature engineering
 │   ├── train.py                         # Model training script (basic)
 │   ├── train_with_mlflow.py             # Model training with MLflow experiment tracking
-│   │
-│   ├── models/                          # Folder containing model definitions
-│   │   ├── logistic_regression.py
-│   │   ├── random_forest.py
-│   │   └── xgboost_model.py
-│   │
 │   ├── eval.py                          # Evaluation functions (metrics, plots, threshold tuning)
-│   └── utils.py                         # Utility functions for saving/loading models and plots
+│   ├── utils.py                         # Utility functions for saving/loading models and plots
+│   │
+│   └── models/                          # Folder containing model definitions
+│       ├── logistic_regression.py
+│       ├── random_forest.py
+│       └── xgboost_model.py
 │
 ├── datasets/                            # Folder containing datasets
 │   ├── train.csv
@@ -59,8 +58,8 @@ credit-card-fraud-detection/
 │
 ├── requirements.txt                     # Python dependencies
 └── README.md                            # Project overview (this file)
+```
 
----
 
 ## 📊 Evaluation Metrics
 
