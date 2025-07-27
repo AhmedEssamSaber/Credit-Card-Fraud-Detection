@@ -36,55 +36,6 @@ credit-card-fraud-detection/
 └── README.md                # Project overview (this file)
 ```
 
----
-
-## 🧾 Dataset
-
-- **Source**: https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
-- **Records**: 284,807 transactions
-- **Fraudulent**: 492 (~0.17%)
-- **Features**: PCA components (V1–V28), `Time`, `Amount`
-- **Label**: `Class` (0 = Legit, 1 = Fraud)
-
----
-
-## ⚙️ Setup Instructions
-
-```bash
-# Clone the repo
-git clone https://github.com/your-username/credit-card-fraud-detection.git
-cd credit-card-fraud-detection
-
-# Install dependencies
-pip install -r requirements.txt
-```
-
----
-
-## 🔧 Configuration
-
-Edit the `config.py` file to set your dataset paths:
-
-```python
-TRAIN_PATH = "path/to/train.csv"
-VAL_PATH = "path/to/val.csv"
-TEST_PATH = "path/to/test.csv"
-```
-
----
-
-## 🚀 Run Training
-
-```bash
-# Train using all models
-python train.py
-
-# Or with MLflow tracking
-python train_with_mlflow.py
-```
-
----
-
 ## 📊 Evaluation Metrics
 
 Each model is evaluated using:
