@@ -5,6 +5,7 @@ This project builds a machine learning pipeline to detect fraudulent credit card
 ---
 # Project structure
 ---
+---bash
 credit-card-fraud-detection/
 │
 ├── src/
@@ -59,7 +60,7 @@ credit-card-fraud-detection/
 ├── requirements.txt                     # Python dependencies
 └── README.md                            # Project overview (this file)
 
-
+---
 
 ## 📊 Evaluation Metrics
 
