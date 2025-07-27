@@ -28,13 +28,9 @@ credit-card-fraud-detection/
 │
 ├── EDA/                                 # Exploratory Data Analysis (notebooks or scripts)
 │   ├── eda_notebook.ipynb
-│   └── feature_distributions.png
 │
 ├── report/                              # Final report files (PDF/DOCX/LaTeX)
 │   ├── credit_fraud_report.pdf
-│   └── figures/
-│       ├── architecture.png
-│       └── example_plot.png
 │
 ├── results/                             # Saved models, plots, metrics (organized by model)
 │   ├── LogisticRegression/
