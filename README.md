@@ -69,46 +69,9 @@ Open your browser at: [http://localhost:5000](http://localhost:5000)
 
 ---
 
-## ⚖️ Handling Imbalanced Data
-
-- Stratified splitting
-- Class weights (where supported)
-- F1-based threshold tuning
-- Evaluation using Precision-Recall curves
-
----
-
-## 🧾 Requirements
-
-```
-Python 3.10+
-pandas
-numpy
-scikit-learn
-matplotlib
-seaborn
-xgboost
-imbalanced-learn
-mlflow
-```
-
 Install with:
 
 ```bash
 pip install -r requirements.txt
 ```
 
----
-
-## 👨‍💻 Author
-
-**Ahmed Essam**  
-AI Engineer & CS Student  
-🔗 GitHub: [your link]  
-🔗 LinkedIn: [your link]
-
----
-
-## 📄 License
-
-This project is licensed under the **MIT License**.
