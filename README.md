@@ -1,149 +1,163 @@
 # 💳 Credit Card Fraud Detection
 
-This project is a comprehensive machine learning pipeline for detecting fraudulent credit card transactions using multiple supervised learning models including Logistic Regression, Random Forest, and XGBoost. It supports experiment tracking with MLflow, modular code structure, and various evaluation visualizations.
+This project builds a machine learning pipeline to detect fraudulent credit card transactions using classical ML models like Logistic Regression, Random Forest, and XGBoost. It also includes experiment tracking with MLflow and detailed evaluation.
 
 ---
 
-## 📁 Project Structure
+## 📂 Project Structure
 
+```bash
 credit-card-fraud-detection/
 │
-├── config.py                 # Configuration settings for paths and parameters
+├── config.py                # Configuration settings for paths and parameters
 ├── preprocess.py            # Data preprocessing and feature engineering
 ├── train.py                 # Model training script (basic)
 ├── train_with_mlflow.py     # Model training with MLflow experiment tracking
+│
 ├── models/                  # Folder containing model definitions
 │   ├── logistic_regression.py
 │   ├── random_forest.py
 │   └── xgboost_model.py
+│
 ├── eval.py                  # Evaluation functions (metrics, plots, threshold tuning)
 ├── utils.py                 # Utility functions for saving/loading models and plots
-├── results/                 # Folder where all models, plots, and metrics are saved
+│
+├── results/                 # Saved models, plots, metrics (organized by model)
+│   ├── LogisticRegression/
+│   │   ├── model.pkl
+│   │   └── plots/
+│   │       ├── confusion_matrix.png
+│   │       ├── roc_curve.png
+│   │       └── precision_recall_curve.png
+│   ├── RandomForest/
+│   └── XGBoost/
+│
 ├── requirements.txt         # Python dependencies
-└── README.md                # This file
+└── README.md                # Project overview (this file)
+```
 
 ---
 
-## 📊 Dataset
+## 🧾 Dataset
 
-- Source: https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
-- Transactions: 284,807
-- Fraudulent: 492 (~0.17%)
-- Features: 30 (V1–V28 PCA, Time, Amount)
-- Target: Class (0 → Legitimate, 1 → Fraudulent)
-
-The dataset is pre-split into:
-- train.csv
-- val.csv
-- test.csv
-
-These paths must be configured in config.py.
+- **Source**: https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
+- **Records**: 284,807 transactions
+- **Fraudulent**: 492 (~0.17%)
+- **Features**: PCA components (V1–V28), `Time`, `Amount`
+- **Label**: `Class` (0 = Legit, 1 = Fraud)
 
 ---
 
-## 🔧 How to Use
+## ⚙️ Setup Instructions
 
-### 1. Clone the Repository
+```bash
+# Clone the repo
+git clone https://github.com/your-username/credit-card-fraud-detection.git
+cd credit-card-fraud-detection
 
-$ git clone https://github.com/your-username/credit-card-fraud-detection.git
-$ cd credit-card-fraud-detection
+# Install dependencies
+pip install -r requirements.txt
+```
 
-### 2. Install Dependencies
+---
 
-$ pip install -r requirements.txt
+## 🔧 Configuration
 
-### 3. Set File Paths in config.py
+Edit the `config.py` file to set your dataset paths:
 
-Example:
-
-TRAIN_PATH = "data/train.csv"
-VAL_PATH   = "data/val.csv"
-TEST_PATH  = "data/test.csv"
+```python
+TRAIN_PATH = "path/to/train.csv"
+VAL_PATH = "path/to/val.csv"
+TEST_PATH = "path/to/test.csv"
+```
 
 ---
 
 ## 🚀 Run Training
 
-### Basic Training (All Models)
+```bash
+# Train using all models
+python train.py
 
-$ python train.py
-
-### Training with MLflow Tracking
-
-$ python train_with_mlflow.py
+# Or with MLflow tracking
+python train_with_mlflow.py
+```
 
 ---
 
-## 📈 Evaluation
+## 📊 Evaluation Metrics
 
+Each model is evaluated using:
+
+- Accuracy
+- Precision, Recall, F1 Score
+- ROC AUC Score
 - Confusion Matrix
 - ROC Curve
 - Precision-Recall Curve
-- Classification Report
-- Threshold Optimization using F1 Score
-
-All plots and models are saved in:
-
-results/<ModelName>/
-├── model.pkl
-├── metrics.txt
-└── plots/
-    ├── confusion_matrix.png
-    ├── roc_curve.png
-    └── precision_recall_curve.png
+- Threshold Optimization
 
 ---
 
 ## 🧪 MLflow Tracking
 
-To launch the MLflow dashboard:
+```bash
+# Start MLflow dashboard
+mlflow ui
+```
 
-$ mlflow ui
-
-Open in browser: http://localhost:5000
-
----
-
-## 📌 Sample Model Scores
-
-| Model              | Accuracy | F1 Score | ROC AUC |
-|-------------------|----------|----------|---------|
-| Logistic Regression | 0.998   | 0.87     | 0.95    |
-| Random Forest       | 0.999   | 0.91     | 0.98    |
-| XGBoost             | 0.999   | 0.93     | 0.99    |
+Open your browser at: [http://localhost:5000](http://localhost:5000)
 
 ---
 
-## ⚠️ Class Imbalance Handling
+## 🧠 Models Used
 
-- Class weights (`class_weight='balanced'`)
-- Stratified train/val/test splits
-- Threshold tuning using precision-recall tradeoff
+- Logistic Regression
+- Random Forest Classifier
+- XGBoost Classifier
 
 ---
 
-## ✅ Requirements
+## ⚖️ Handling Imbalanced Data
 
-- Python 3.10+
-- pandas
-- numpy
-- scikit-learn
-- xgboost
-- imbalanced-learn
-- matplotlib
-- seaborn
-- mlflow
+- Stratified splitting
+- Class weights (where supported)
+- F1-based threshold tuning
+- Evaluation using Precision-Recall curves
+
+---
+
+## 🧾 Requirements
+
+```
+Python 3.10+
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+xgboost
+imbalanced-learn
+mlflow
+```
+
+Install with:
+
+```bash
+pip install -r requirements.txt
+```
 
 ---
 
 ## 👨‍💻 Author
 
-Ahmed Essam  
-AI Engineer | CS & IS Student  
-[GitHub](https://github.com) | [LinkedIn](https://www.linkedin.com)
+**Ahmed Essam**  
+AI Engineer & CS Student  
+🔗 GitHub: [your link]  
+🔗 LinkedIn: [your link]
 
 ---
 
-## 📃 License
+## 📄 License
 
-This project is licensed under the MIT License.
+This project is licensed under the **MIT License**.
