@@ -70,15 +70,8 @@ Open your browser at: [http://localhost:5000](http://localhost:5000)
 
 ---
 
-## 🧠 Models Used
 
-- Logistic Regression
-- Random Forest Classifier
-- XGBoost Classifier
-
----
-
-Install with:
+Install requirements with:
 
 ```bash
 pip install -r requirements.txt
