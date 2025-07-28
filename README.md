@@ -77,11 +77,8 @@ Each model is evaluated using:
 # Start MLflow dashboard
 mlflow ui
 ```
-
-Open your browser at: [http://localhost:5000](http://localhost:5000)
-
 ---
-## 📌 Sample Model Scores
+## 📌 Validation Model Scores 
 
 | Model               | Accuracy | F1 Score | ROC AUC |
 |---------------------|----------|----------|---------|
