@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Ai%20courses/ML%20mostafa%20saad/projects/cr%20v2/mlruns/377745585407474178/bc36849ea05649abbad9db7c4f451181/artifacts
+deleted_time: 1753656548392
+end_time: 1753636361943
+entry_point_name: ''
+experiment_id: '377745585407474178'
+lifecycle_stage: deleted
+run_id: bc36849ea05649abbad9db7c4f451181
+run_name: Model Evaluation with Test Set
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1753636361911
+status: 4
+tags: []
+user_id: Ahmed

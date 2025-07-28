@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Ai%20courses/ML%20mostafa%20saad/projects/cr%20v2/mlruns/445123163092965739/f48bfefe02264b3f898f2782d7155386/artifacts
+deleted_time: 1753732198920
+end_time: 1753712680730
+entry_point_name: ''
+experiment_id: '445123163092965739'
+lifecycle_stage: deleted
+run_id: f48bfefe02264b3f898f2782d7155386
+run_name: XGBoost
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1753712675668
+status: 3
+tags: []
+user_id: Ahmed

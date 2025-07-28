@@ -1,0 +1,10 @@
+artifact_location: file:///D:/Ai%20courses/ML%20mostafa%20saad/projects/cr%20v2/mlruns/803054637684186145/models/m-c2f945749ac84c9ebdcdc0bae009611f/artifacts
+creation_timestamp: 1753655133773
+experiment_id: '803054637684186145'
+last_updated_timestamp: 1753655138039
+model_id: m-c2f945749ac84c9ebdcdc0bae009611f
+model_type: null
+name: model
+source_run_id: a898e2482f454a7d8a2d7260526707c2
+status: 2
+status_message: null

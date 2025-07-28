@@ -1,0 +1,22 @@
+artifact_path: file:///D:/Ai%20courses/ML%20mostafa%20saad/projects/cr%20v2/mlruns/803054637684186145/models/m-c2f945749ac84c9ebdcdc0bae009611f/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.1
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.6.1
+mlflow_version: 3.1.4
+model_id: m-c2f945749ac84c9ebdcdc0bae009611f
+model_size_bytes: 960
+model_uuid: m-c2f945749ac84c9ebdcdc0bae009611f
+prompts: null
+run_id: a898e2482f454a7d8a2d7260526707c2
+utc_time_created: '2025-07-27 22:25:33.822670'

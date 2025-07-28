@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Ai%20courses/ML%20mostafa%20saad/projects/cr%20v2/mlruns/803054637684186145/9d3cecb01cb841148ec82619ad2dbbf4/artifacts
+deleted_time: 1753656546146
+end_time: 1753655318738
+entry_point_name: ''
+experiment_id: '803054637684186145'
+lifecycle_stage: deleted
+run_id: 9d3cecb01cb841148ec82619ad2dbbf4
+run_name: Random_Forest (Evaluation)
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1753655304731
+status: 3
+tags: []
+user_id: Ahmed

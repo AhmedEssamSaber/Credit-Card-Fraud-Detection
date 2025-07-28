@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Ai%20courses/ML%20mostafa%20saad/projects/cr%20v2/mlruns/403234348064386248/1728e2e37b8b46ff9bf781c4d1d258fc/artifacts
+deleted_time: 1753732223198
+end_time: 1753659786852
+entry_point_name: ''
+experiment_id: '403234348064386248'
+lifecycle_stage: deleted
+run_id: 1728e2e37b8b46ff9bf781c4d1d258fc
+run_name: All Models Evaluation
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1753659786836
+status: 4
+tags: []
+user_id: Ahmed

@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Ai%20courses/ML%20mostafa%20saad/projects/cr%20v2/mlruns/0/2390cae37ddd4050bf1c3bb1c35dd9fc/artifacts
+deleted_time: 1753656533612
+end_time: 1753636494461
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: 2390cae37ddd4050bf1c3bb1c35dd9fc
+run_name: Logistic_Regression
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1753636494440
+status: 4
+tags: []
+user_id: Ahmed
