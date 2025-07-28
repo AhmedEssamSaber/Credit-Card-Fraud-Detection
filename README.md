@@ -8,7 +8,7 @@ This project builds a machine learning pipeline to detect fraudulent credit card
 ```bash
 credit-card-fraud-detection/
 │
-├── src/                                 # Source code
+├── Modiling/                                 # Source code
 │   ├── config.py                        # Configuration settings for paths and parameters
 │   ├── preprocess.py                    # Data preprocessing and feature engineering
 │   ├── train.py                         # Model training script (basic)
